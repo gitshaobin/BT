@@ -272,7 +272,7 @@ void msg_dump(void)
     
     MSG_PRT("msg-border:%p pool:%p\r\n", msg_entity.borderline, msg_entity.pool);
 }
-
+//   消息池污染判断， 头尾特定内容
 uint32 msg_pool_is_polluted(void)
 {
     uint8 *temp;
